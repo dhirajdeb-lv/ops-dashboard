@@ -1,0 +1,178 @@
+// Reset pre-applied stylings
+* {
+  margin: 0;
+  padding: 0;
+}
+
+// Variables
+$border: 1px solid black;
+$primary: #3b3bf0;
+$secondary: #e3c19e;
+$kk-green: rgb(61, 162, 61);
+
+body {
+  background: lightgray;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+form {
+  position: relative;
+}
+
+header {
+  border: $border;
+  background: $kk-green;
+  height: fit-content;
+  padding: 10px 0;
+}
+
+.float-clear {
+  clear: both;
+}
+
+.right {
+  position: absolute;
+  right: 0;
+}
+
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+.box {
+  position: absolute;
+  height: 220px;
+  width: 300px;
+  border: $border;
+  border-radius: 0px 10px 10px 0px;
+  top: 250px;
+  left: calc(50% + 10px);
+  padding: 20px;
+  background: $secondary;
+}
+
+.line {
+  position: absolute;
+
+  &-vertical {
+    height: 80vh;
+    border-left: $border;
+    border-width: 10px;
+    top: 80px;
+    left: 50%;
+  }
+}
+
+.input-group {
+  margin-bottom: 20px;
+
+  &__label {
+    display: block;
+    font-size: 1.2em;
+    font-weight: 800;
+    margin-bottom: 5px;
+  }
+
+  &__input {
+    width: 100%;
+    height: 40px;
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    border-style: none;
+    box-sizing: border-box;
+  }
+}
+
+.btn {
+  padding: 2px 15px;
+  height: 40px;
+  font-size: 1.2em;
+  border-style: none;
+  cursor: pointer;
+
+  &-primary {
+    background: $primary;
+    color: #fff;
+  }
+
+  &-secondary {
+    background: $secondary;
+    color: #fff;
+  }
+
+  &-logout {
+    margin-right: 20px;
+  }
+}
+
+.heading {
+  border: $border;
+  border-radius: 10px 0px 0px 10px;
+  height: 60px;
+  width: 300px;
+  position: absolute;
+  top: 150px;
+  float: right;
+  right: 50%;
+  text-align: center;
+  background: $kk-green;
+  color: #fff;
+
+  &__main {
+    font-size: 3em;
+  }
+}
+
+.header__heading {
+  font-size: 2.5em;
+  padding-left: 20px;
+  color: #fff;
+  display: inline-block;
+}
+
+.navbar {
+  position: relative;
+  height: fit-content;
+  text-align: center;
+  padding: 10px 0;
+  background: $secondary;
+
+  &__item {
+    font-size: 1.5em;
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    border: $border;
+    padding: 10px;
+  }
+}
+
+.sidebar {
+  width: 200px;
+  border: $border;
+  text-align: center;
+  background: $kk-green;
+  height: 100vh;
+  display: inline-block;
+
+  &__item {
+    font-size: 1.5em;
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    border: $border;
+    padding: 10px;
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+  }
+}
+
+.table-primary {
+  position: relative;
+  border: $border;
+  margin: auto;
+}
